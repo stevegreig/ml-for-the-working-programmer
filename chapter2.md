@@ -89,7 +89,7 @@ powoftwo(8) ==> (8=1) orelse (even(8) andalso ...)
 
 __2.11.__ Yes, as shown by the reduction steps. This is because andalso and orelse are conditional operators rather than functions.
 
-__2.12.__ The reduction steps for power(2,29), ignoring the k=1 test, are
+__2.12.__ The reduction steps for `power(2,29)`, ignoring the `k=1` test, are
 
 ```
 power(2,29) ==> if 29 mod 2 = 0 then ... else ...
@@ -118,7 +118,7 @@ __2.15.__ Both computations result in repeated function evaluations, but for dif
 
 __2.16.__ For "steps", count the number of calls to F. It's easy to check that F(0) and F(1) involves one call, and that F(n+2)=F(n)+(F(n-1)+F(n)), so F(n+2) involves more than twice as many calls as F(n). By induction, F(2n) makes at least 2^n calls. Thus F(n) makes at least sqrt(2)^n calls. But fib(n) makes just n calls of itfib.
 
-__2.17.__ itfib(n,F(k-1),F(k)) = F(k+n-1). See page 222 for the proof.
+__2.17.__ `itfib(n,F(k-1),F(k)) = F(k+n-1)`. See page 222 for the proof.
 
 __2.18.__ This is a challenge rather than an exercise. I do not know of any easy solution, which is precisely the point. David Eger contributes this solution, using an explicit stack to handle the recursion.
 
