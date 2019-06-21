@@ -65,7 +65,7 @@ __2.8.__ A type constraint is required because - is overloaded:
 fun lifetime({name,born,died,quote,crowned}) : int = died - born;
 ```
 
-Its type is {born:int,crowned:'a,died:int,name:'b,quote:'c} -> int.
+Its type is `{born:int,crowned:'a,died:int,name:'b,quote:'c} -> int`.
 
 The declaration does not constrain the other fields; their types are polymorphic.
 
