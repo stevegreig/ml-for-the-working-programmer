@@ -120,7 +120,7 @@ fun matprod(rowsA,rowsB) =
   let val colsB = transp rowsB 
   in    map (fn row => map (fn col => dotprod(row,col)) colsB) rowsA
   end;
-``
+```
 
 __5.16.__ Lazy evaluation is required to solve this exercise fully, since foldl and foldr (in ML) always traverse the entire list, while exists stops as soon as a true element is found.
 
